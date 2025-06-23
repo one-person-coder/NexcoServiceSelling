@@ -32,21 +32,21 @@ function ServiceFoundation() {
               icon: <Heart className="w-8 h-8" />,
               title: "Our Mission",
               content:
-                "To empower businesses worldwide by providing expert outsourcing solutions that simplify recruitment, enhance efficiency, and deliver top talent with integrity and professionalism.",
+                "To empower global businesses by delivering expert outsourcing solutions that streamline recruitment, boost productivity, and connect them with top-tier talent — with unwavering integrity and professionalism.",
               color: "from-red-500/20 to-red-600/10",
             },
             {
               icon: <Eye className="w-8 h-8" />,
               title: "Our Vision",
               content:
-                "To be the leading global outsourcing partner renowned for transforming recruitment processes and enabling companies to build exceptional teams effortlessly.",
+                "To be the world’s most trusted outsourcing partner, revolutionizing recruitment and enabling companies to build exceptional teams with ease.",
               color: "from-blue-500/20 to-blue-600/10",
             },
             {
               icon: <Flag className="w-8 h-8" />,
               title: "Our Goal",
               content:
-                "To consistently exceed client expectations through innovative outsourcing services, dedicated support, and a commitment to quality — helping businesses grow and thrive in a competitive world.",
+                "To exceed expectations consistently through innovative, quality-driven outsourcing services — helping our clients grow, compete, and lead in today’s fast-changing world.",
               color: "from-green-500/20 to-green-600/10",
             },
           ].map((item, index) => (
@@ -103,7 +103,7 @@ function ServiceFoundation() {
                 transition={{ duration: 0.6 }}
               />
               <span className="relative z-10 flex items-center">
-                Meet Our Team
+                View Services
                 <Users className="ml-2 w-5 h-5" />
               </span>
             </Button>
@@ -113,5 +113,7 @@ function ServiceFoundation() {
     </section>
   );
 }
+
+
 
 export default ServiceFoundation;

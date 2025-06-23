@@ -40,9 +40,9 @@ function Footer() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <motion.div className="flex items-center space-x-3 mb-8">
+              {/* <motion.div className="flex items-center space-x-3 mb-8">
                 <SiteLogo />
-              </motion.div>
+              </motion.div> */}
 
               <p className="text-gray-300 mb-8 leading-relaxed text-lg">
                 Sourcing the best global talent and connecting them with the

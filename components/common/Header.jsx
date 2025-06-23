@@ -19,9 +19,9 @@ function Header() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className="fixed top-0 w-full z-50 bg-gray-900/95 backdrop-blur-md border-b border-orange-500/20"
+      className="fixed top-0 w-full z-50 bg-white backdrop-blur-md border-b border-orange-500/20"
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-1.5">
         <div className="flex items-center justify-between">
           <SiteLogo />
           <DesktopNavigation navLinks={navLinks} />
@@ -48,7 +48,7 @@ const DesktopNavigation = ({ navLinks }) => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
-          className="text-gray-300 hover:text-orange-400 transition-all duration-300 font-medium relative group"
+          className="text-black hover:text-orange-500 transition-all duration-300 !font-semibold relative group"
         >
           {item}
           <motion.div

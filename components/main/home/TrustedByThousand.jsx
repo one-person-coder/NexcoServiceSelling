@@ -33,7 +33,7 @@ const Counter = ({ end, duration = 2, suffix = "" }) => {
 
 function TrustedByThousand() {
   const stats = [
-    { number: 500, suffix: "+", label: "Successful Placements" },
+    { number: 5, suffix: "+", label: "Experience" },
     { number: 98, suffix: "%", label: "Client Satisfaction" },
     { number: 50, suffix: "+", label: "Global Partners" },
     { number: 24, suffix: "/7", label: "Support Available" },

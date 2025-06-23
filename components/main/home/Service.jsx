@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Users, Target, Zap, Globe, Award, Building } from "lucide-react";
+import Image from "next/image";
 
 function Service() {
   return (
@@ -43,7 +44,7 @@ function Service() {
           </motion.p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+        <div className="relative grid lg:grid-cols-2 gap-16 items-center mb-20">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -124,66 +125,79 @@ function Service() {
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative"
+            className="!h-72 lg:!h-full w-full"
           >
-            <div className="grid grid-cols-2 gap-6">
-              {[
-                {
-                  icon: <Globe className="w-8 h-8" />,
-                  title: "Global Network",
-                  desc: "Worldwide talent access",
-                  color: "from-blue-500/20 to-blue-600/10",
-                },
-                {
-                  icon: <Target className="w-8 h-8" />,
-                  title: "Precision Matching",
-                  desc: "Perfect fit guaranteed",
-                  color: "from-green-500/20 to-green-600/10",
-                },
-                {
-                  icon: <Zap className="w-8 h-8" />,
-                  title: "Fast Delivery",
-                  desc: "Quick turnaround",
-                  color: "from-purple-500/20 to-purple-600/10",
-                },
-                {
-                  icon: <Award className="w-8 h-8" />,
-                  title: "Quality Assured",
-                  desc: "Top-tier professionals",
-                  color: "from-orange-500/20 to-orange-600/10",
-                },
-              ].map((item, index) => (
-                <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.05, y: -5, rotateY: 5 }}
-                  className={`bg-gradient-to-br ${item.color} p-6 rounded-xl border border-orange-500/20 text-center relative overflow-hidden`}
-                >
-                  <motion.div
-                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.8 }}
-                  />
-                  <motion.div
-                    className="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10"
-                    whileHover={{ rotate: 360, scale: 1.1 }}
-                    transition={{ duration: 0.8 }}
-                  >
-                    <div className="text-orange-400">{item.icon}</div>
-                  </motion.div>
-                  <h4 className="font-bold text-lg mb-2 relative z-10">
-                    {item.title}
-                  </h4>
-                  <p className="text-sm text-gray-400 relative z-10">
-                    {item.desc}
-                  </p>
-                </motion.div>
-              ))}
+            <div className="relative h-full w-auto rounded-xl overflow-hidden">
+              <Image src="/images/office.jpeg" fill className="object-cover"/>
             </div>
           </motion.div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="relative"
+        >
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500/20 via-orange-500 to-orange-500/20 transform -translate-y-1/2" />
+
+            {[
+              {
+                icon: <Globe className="w-8 h-8" />,
+                title: "Global Network",
+                desc: "Worldwide talent access",
+                color: "from-blue-500/20 to-blue-600/10",
+              },
+              {
+                icon: <Target className="w-8 h-8" />,
+                title: "Precision Matching",
+                desc: "Perfect fit guaranteed",
+                color: "from-green-500/20 to-green-600/10",
+              },
+              {
+                icon: <Zap className="w-8 h-8" />,
+                title: "Fast Delivery",
+                desc: "Quick turnaround",
+                color: "from-purple-500/20 to-purple-600/10",
+              },
+              {
+                icon: <Award className="w-8 h-8" />,
+                title: "Quality Assured",
+                desc: "Top-tier professionals",
+                color: "from-orange-500/20 to-orange-600/10",
+              },
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                whileHover={{ scale: 1.05, y: -5, rotateY: 5 }}
+                className={`bg-gradient-to-br from-gray-800/80 to-gray-900/80 p-8 rounded-2xl border border-orange-500/20 text-center z-10 relative overflow-hidden`}
+              >
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/5 to-transparent"
+                  initial={{ x: "-100%" }}
+                  whileHover={{ x: "100%" }}
+                  transition={{ duration: 0.8 }}
+                />
+                <motion.div
+                  className="w-16 h-16 bg-orange-500/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10"
+                  whileHover={{ rotate: 360, scale: 1.1 }}
+                  transition={{ duration: 0.8 }}
+                >
+                  <div className="text-orange-400">{item.icon}</div>
+                </motion.div>
+                <h4 className="font-bold text-lg mb-2 relative z-10">
+                  {item.title}
+                </h4>
+                <p className="text-sm text-gray-400 relative z-10">
+                  {item.desc}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );

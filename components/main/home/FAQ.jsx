@@ -9,27 +9,22 @@ function FAQ() {
     {
       question: "How quickly can you find suitable candidates?",
       answer:
-        "Our typical turnaround time is 1-2 weeks for most positions. For urgent requirements, we can provide qualified candidates within 48-72 hours through our rapid response service.",
+        "Our standard turnaround time is 12 - 24 hour , with urgent roles filled within 6 to 12 Hour hours via our Rapid Response Service.",
     },
     {
       question: "What industries do you specialize in?",
       answer:
-        "We specialize in technology, finance, healthcare, manufacturing, and professional services. Our global network covers virtually every industry sector.",
-    },
-    {
-      question: "Do you offer any guarantees?",
-      answer:
-        "Yes, we offer a 90-day replacement guarantee. If a placed candidate doesn't work out within the first 90 days, we'll find a replacement at no additional cost.",
+        "We recruit for tech, finance, healthcare, manufacturing, and more — covering nearly every major sector through our global network.",
     },
     {
       question: "How do you ensure candidate quality?",
       answer:
-        "We use a rigorous 5-step screening process including technical assessments, cultural fit evaluation, reference checks, and background verification.",
+        "Every candidate goes through a 5-step screening process, including skills testing, cultural fit checks, and background verification.",
     },
     {
       question: "What are your pricing models?",
       answer:
-        "We offer flexible pricing including contingency, retained search, and project-based models. Contact us for a customized quote based on your specific needs.",
+        "We offer contingency, retained, and project-based pricing — all tailored to your hiring needs, budget, and timeline.",
     },
   ];
 

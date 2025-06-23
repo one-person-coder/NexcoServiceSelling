@@ -158,9 +158,9 @@ function Hero() {
               className="mb-12"
             >
               <motion.p className="hidden sm:block text-lg md:text-xl text-gray-400 mb-8">
-                Whether you're a business seeking top talent or a candidate
-                searching for your next opportunity, you've come to the right
-                place.
+                Whether you're an organization seeking exceptional talent or a
+                professional exploring your next opportunity, NexCo is your
+                trusted global partner.
               </motion.p>
             </motion.div>
           )}
@@ -187,7 +187,7 @@ function Hero() {
                     transition={{ duration: 0.6 }}
                   />
                   <span className="relative z-10 flex items-center">
-                    View Services
+                    Our Team
                     <motion.div
                       animate={{ x: [0, 5, 0] }}
                       transition={{

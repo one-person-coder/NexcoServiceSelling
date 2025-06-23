@@ -60,7 +60,6 @@ function OurProcess() {
         </motion.div>
 
         <div className="relative">
-          {/* Process Line */}
           <div className="hidden md:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500/20 via-orange-500 to-orange-500/20 transform -translate-y-1/2" />
 
           <div className="grid md:grid-cols-4 gap-8">

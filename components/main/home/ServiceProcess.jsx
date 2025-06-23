@@ -16,12 +16,12 @@ function ServiceProcess() {
       icon: <Search className="w-8 h-8" />,
       title: "Find the Right Talent, Fast",
       description:
-        "Customized search and selection that matches your business goals and delivers the skills you need, when you need them.",
+        "We tailor every search to match your unique goals, ensuring the right people arrive when you need them most.",
       features: [
-        "Global talent pool access",
-        "Precision matching",
-        "Quick turnaround",
-        "Quality guaranteed",
+        "Access to global talent pools",
+        "Precision role-to-skill matching",
+        "Quick CV turnaround",
+        "Quality-first shortlisting",
       ],
       color: "from-blue-500/20 to-blue-600/10",
       borderColor: "border-blue-500/20",
@@ -30,12 +30,12 @@ function ServiceProcess() {
       icon: <Briefcase className="w-8 h-8" />,
       title: "Full-Service Hiring Solutions",
       description:
-        "From branding to onboarding, we embed ourselves within your company to support your growth every step of the way.",
+        "We integrate seamlessly with your company — from employer branding to onboarding — acting as an extension of your in-house team.",
       features: [
-        "End-to-end recruitment",
-        "Brand integration",
-        "Onboarding support",
-        "Continuous partnership",
+        "End-to-end recruitment management",
+        "Brand tone & culture alignment",
+        "Onboarding guidance",
+        "Ongoing support & feedback",
       ],
       color: "from-purple-500/20 to-purple-600/10",
       borderColor: "border-purple-500/20",
@@ -44,12 +44,12 @@ function ServiceProcess() {
       icon: <UserPlus className="w-8 h-8" />,
       title: "Boost Your Team Instantly",
       description:
-        "Need experts now? Our agile staff augmentation gives you access to talented professionals who accelerate your project delivery.",
+        "Need talent urgently? Our agile staffing model gives you instant access to experienced professionals ready to make impact.",
       features: [
-        "Immediate availability",
-        "Skilled professionals",
-        "Project acceleration",
-        "Flexible scaling",
+        "Immediately available talent",
+        "Skilled across multiple sectors",
+        "Faster project delivery",
+        "Scalable as your business grows",
       ],
       color: "from-green-500/20 to-green-600/10",
       borderColor: "border-green-500/20",
@@ -66,10 +66,15 @@ function ServiceProcess() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-8">
-            CLIENT SERVICES <span className="text-orange-400">OVERVIEW</span>
+            Smart Outsourcing Solutions{" "}
+            <span className="text-orange-400">That Power Your Growth</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Comprehensive solutions tailored to your unique business needs
+            Our Outsourcing Model: Fast, Flexible & Fully Integrated At NexCo,
+            our outsourcing approach is built around your business needs.
+            Whether you're seeking niche talent, end-to-end hiring support, or
+            quick team scaling — we deliver with precision, speed, and
+            consistency.
           </p>
           <motion.div
             initial={{ width: 0 }}
