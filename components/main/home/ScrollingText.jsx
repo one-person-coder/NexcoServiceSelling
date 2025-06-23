@@ -2,15 +2,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-function ScrollingText() {
+function ScrollingText({ scrollingTexts }) {
   const [currentScrollText, setCurrentScrollText] = useState(0);
 
-  const scrollingTexts = [
-    "We deliver what we promise.",
-    "We understand the outsourcing business deeply.",
-    "We put in the effort to exceed expectations.",
-    "No empty talk — only real, measurable outcomes.",
-  ];
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentScrollText((prev) => (prev + 1) % scrollingTexts.length);

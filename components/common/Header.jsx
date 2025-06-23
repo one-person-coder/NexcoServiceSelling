@@ -4,15 +4,16 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import SiteLogo from "@/components/common/SiteLogo";
+import Link from "next/link";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navLinks = [
-    "Home",
-    "Services",
-    "Sectors We Serve",
-    "Our Team",
-    "Contact Us",
+    { label: "Home", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Sectors We Serve", href: "/sectors-we-serve" },
+    { label: "Our Team", href: "/" },
+    { label: "Contact Us", href: "/contact-us" },
   ];
 
   return (
@@ -42,20 +43,23 @@ const DesktopNavigation = ({ navLinks }) => {
   return (
     <nav className="hidden lg:flex items-center space-x-8">
       {navLinks.map((item, index) => (
-        <motion.a
-          key={item}
-          href={`#${item.toLowerCase()}`}
+        <motion.div
+          key={item?.label}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: index * 0.1 }}
-          className="text-black hover:text-orange-500 transition-all duration-300 !font-semibold relative group"
         >
-          {item}
+          <Link
+            href={`${item?.href}`}
+            className="text-black hover:text-orange-500 transition-all duration-300 !font-semibold relative group"
+          >
+            {item?.label}
+          </Link>
           <motion.div
             className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 group-hover:w-full transition-all duration-300"
             layoutId="underline"
           />
-        </motion.a>
+        </motion.div>
       ))}
     </nav>
   );

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion"
-
+"use client";
+import { motion } from "framer-motion";
 
 const Particle = ({ delay = 0 }) => (
   <motion.div

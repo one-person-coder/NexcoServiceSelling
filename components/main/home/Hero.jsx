@@ -205,7 +205,6 @@ function Hero() {
         </div>
       </div>
 
-      {/* Enhanced Scroll Indicator */}
       {isLoaded && (
         <motion.div
           initial={{ opacity: 0 }}
