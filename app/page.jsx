@@ -6,6 +6,7 @@ import ScrollingText from "@/components/main/home/ScrollingText";
 import TrustedByThousand from "@/components/main/home/TrustedByThousand";
 import OurProcess from "@/components/main/home/OurProcess";
 import ServiceProcess from "@/components/main/home/ServiceProcess";
+import Testimonials from "@/components/main/home/Testimonials";
 import FAQ from "@/components/main/home/FAQ";
 import EventsNetworking from "@/components/main/home/EventsNetworking";
 
@@ -26,7 +27,7 @@ export default function NexCoOutsourcing() {
       <TrustedByThousand />
       <OurProcess />
       <ServiceProcess />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <FAQ />
       <EventsNetworking />
     </div>

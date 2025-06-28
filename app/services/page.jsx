@@ -176,10 +176,11 @@ function Services() {
                 </h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                Muhammad Ishraq and Hamza Tariq came together with a bold vision
-                — to create a next-generation outsourcing consultancy that
-                simplifies global hiring and delivers unmatched value to clients
-                and candidates alike.
+                Muhammad Ishraq and Hamza Tariq joined forces with a shared
+                vision: to build a next-generation outsourcing consultancy that
+                redefines global hiring. Their mission is to simplify
+                recruitment for clients while creating real value for candidates
+                worldwide.
               </p>
             </motion.div>
             <motion.div
@@ -208,10 +209,10 @@ function Services() {
                 </h3>
               </div>
               <p className="text-gray-300 leading-relaxed text-lg">
-                We blend human expertise with smart sourcing to help businesses
-                around the globe, especially in the UK, find top-tier talent and
-                grow faster. Whether you’re scaling a team or need a one-off
-                talent solution, we’ve got you covered.{" "}
+                We combine industry insight with intelligent sourcing to connect
+                UK and global businesses with high-quality talent — fast.
+                Whether you're scaling your team or filling a one-off role, our
+                expert network ensures precise, efficient hiring.
               </p>
             </motion.div>
           </div>
