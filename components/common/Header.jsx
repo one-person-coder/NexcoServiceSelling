@@ -12,7 +12,7 @@ function Header() {
     { label: "Home", href: "/" },
     { label: "Services", href: "/services" },
     { label: "Sectors We Serve", href: "/sectors-we-serve" },
-    { label: "Our Team", href: "/" },
+    { label: "Our Team", href: "/our-team" },
     { label: "Contact Us", href: "/contact-us" },
   ];
 
