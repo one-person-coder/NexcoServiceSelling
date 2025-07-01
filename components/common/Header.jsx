@@ -94,8 +94,13 @@ const MobileNavigation = ({ navLinks, isMenuOpen, setIsMenuOpen }) => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
-              <Button className="bg-gradient-to-r from-orange-500 to-orange-600 text-white w-fit">
-                Book A Trial
+              <Button
+                asChild
+                className="bg-gradient-to-r from-orange-500 to-orange-600 text-white w-fit"
+              >
+                <Link href={"mailto:mehvish.asghar@nexcooutsourcing.com"}>
+                  Book A Trial
+                </Link>
               </Button>
             </motion.div>
           </div>
@@ -156,7 +161,12 @@ const BookTrial = () => {
           whileHover={{ x: "100%" }}
           transition={{ duration: 0.5 }}
         />
-        <span className="relative z-10">Book A Trial</span>
+        <Link
+          href="mailto:mehvish.asghar@nexcooutsourcing.com"
+          className="relative z-10"
+        >
+          Book A Trial
+        </Link>
       </Button>
     </motion.div>
   );
