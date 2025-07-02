@@ -78,15 +78,15 @@ const MobileNavigation = ({ navLinks, isMenuOpen, setIsMenuOpen }) => {
           <div className="flex flex-col space-y-4 pt-4">
             {navLinks.map((item, index) => (
               <motion.a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item?.label}
+                href={item?.href}
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="text-gray-300 hover:text-orange-400 transition-colors font-medium py-2"
+                className="text-gray-900 hover:text-orange-400 transition-colors font-medium py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {item}
+                {item?.label}
               </motion.a>
             ))}
             <motion.div
@@ -126,7 +126,7 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }) => {
             exit={{ rotate: 90, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <X className="w-6 h-6" />
+            <X className="w-6 h-6 text-black" />
           </motion.div>
         ) : (
           <motion.div
@@ -136,7 +136,7 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen }) => {
             exit={{ rotate: -90, opacity: 0 }}
             transition={{ duration: 0.2 }}
           >
-            <Menu className="w-6 h-6" />
+            <Menu className="w-6 h-6 text-black" />
           </motion.div>
         )}
       </AnimatePresence>
