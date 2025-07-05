@@ -7,6 +7,9 @@ import Footer from "@/components/common/Footer";
 export const metadata = {
   title: "Nexco",
   description: "Nexco",
+  verification: {
+    google: "zcw0Dop4fZkOeCBWA0uOlblreljJuZ3DVEi7N5lcI1g",
+  },
 };
 
 export default function RootLayout({ children }) {
