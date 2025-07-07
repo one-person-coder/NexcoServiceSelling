@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { ArrowRight, Mail, MapPin, Phone, Sparkles } from "lucide-react";
 import Link from "next/link";
 import SiteLogo from "@/components/common/SiteLogo";
+import Image from "next/image";
 
 function Footer() {
   return (
@@ -82,6 +83,14 @@ function Footer() {
                   </motion.div>
                 ))}
               </div>
+              <div className="mt-8">
+                <Image src="/images/footer/1.png" width={250} height={100} />
+              </div>
+              <div className="mt-8 flex justify-between gap-4 flex-wrap">
+                <Image src="/images/footer/2.png" width={110} height={110} />
+                <Image src="/images/footer/3.png" width={110} height={110} />
+                <Image src="/images/footer/4.png" width={110} height={110} />
+              </div>
             </motion.div>
 
             <motion.div
@@ -110,25 +119,30 @@ function Footer() {
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <Button className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white h-16 text-lg rounded-xl relative overflow-hidden group">
-                    <motion.div
-                      className="absolute inset-0 bg-white/20"
-                      initial={{ x: "-100%" }}
-                      whileHover={{ x: "100%" }}
-                      transition={{ duration: 0.6 }}
-                    />
-                    <span className="relative z-10 flex items-center justify-center">
-                      Get Started
+                  <Button
+                    className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white h-16 text-lg rounded-xl relative overflow-hidden group"
+                    asChild
+                  >
+                    <Link href={"/contact-us"}>
                       <motion.div
-                        animate={{ x: [0, 5, 0] }}
-                        transition={{
-                          duration: 1.5,
-                          repeat: Number.POSITIVE_INFINITY,
-                        }}
-                      >
-                        <ArrowRight className="ml-2 w-5 h-5" />
-                      </motion.div>
-                    </span>
+                        className="absolute inset-0 bg-white/20"
+                        initial={{ x: "-100%" }}
+                        whileHover={{ x: "100%" }}
+                        transition={{ duration: 0.6 }}
+                      />
+                      <span className="relative z-10 flex items-center justify-center">
+                        Get Started
+                        <motion.div
+                          animate={{ x: [0, 5, 0] }}
+                          transition={{
+                            duration: 1.5,
+                            repeat: Number.POSITIVE_INFINITY,
+                          }}
+                        >
+                          <ArrowRight className="ml-2 w-5 h-5" />
+                        </motion.div>
+                      </span>
+                    </Link>
                   </Button>
                 </motion.div>
               </form>

@@ -19,6 +19,7 @@ import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link";
 
 function Services() {
   const scrollingTexts = [
@@ -65,10 +66,10 @@ function Services() {
     },
     {
       icon: <AlignVerticalJustifyEnd className="w-8 h-8" />,
-      title: "Virtual Assistant",
-      imgPath: "/images/services/5.png",
+      title: "Candidate Pre-Screening",
+      imgPath: "/images/services/8.jpeg",
       description:
-        "At NexCo Outsourcing, our Virtual Assistant Services are designed to support businesses globally with reliable and skilled professionals. From administrative to creative and technical tasks, our VAs help you save time, increase efficiency, and stay focused on your core business goals — all while we manage the rest remotely with precision.",
+        "At Nexco Outsourcing, we take the first step for you by conducting detailed pre-screening calls with potential candidates. Our trained team assesses each candidate based on your specific job criteria – including experience, skill match, notice period, location, salary expectations, and interest in the role.You’ll receive a clear summary with every shortlisted CV, helping you quickly identify the best-fit profiles without spending hours on initial calls",
       color: "from-green-500/20 to-green-600/10",
       borderColor: "border-green-500/20",
     },
@@ -311,17 +312,22 @@ function Services() {
               whileTap={{ scale: 0.95 }}
               className="!w-fit mx-auto"
             >
-              <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 text-lg relative overflow-hidden group !w-fit">
-                <motion.div
-                  className="absolute inset-0 bg-white/20"
-                  initial={{ x: "-100%" }}
-                  whileHover={{ x: "100%" }}
-                  transition={{ duration: 0.6 }}
-                />
-                <span className="relative z-10 flex items-center">
-                  Free Trial
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </span>
+              <Button
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 text-lg relative overflow-hidden group !w-fit"
+                asChild
+              >
+                <Link href={"mailto:mehvish.asghar@nexcooutsourcing.com"}>
+                  <motion.div
+                    className="absolute inset-0 bg-white/20"
+                    initial={{ x: "-100%" }}
+                    whileHover={{ x: "100%" }}
+                    transition={{ duration: 0.6 }}
+                  />
+                  <span className="relative z-10 flex items-center">
+                    Free Trial
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </span>
+                </Link>
               </Button>
             </motion.div>
           </motion.div>

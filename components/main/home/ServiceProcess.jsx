@@ -9,6 +9,7 @@ import {
   UserPlus,
   CheckCircle,
 } from "lucide-react";
+import Link from "next/link";
 
 function ServiceProcess() {
   const services = [
@@ -153,16 +154,18 @@ function ServiceProcess() {
             whileTap={{ scale: 0.95 }}
           >
             <Button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 text-lg relative overflow-hidden group">
-              <motion.div
-                className="absolute inset-0 bg-white/20"
-                initial={{ x: "-100%" }}
-                whileHover={{ x: "100%" }}
-                transition={{ duration: 0.6 }}
-              />
-              <span className="relative z-10 flex items-center">
-                Find Out More
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </span>
+              <Link href="/sectors-we-serve">
+                <motion.div
+                  className="absolute inset-0 bg-white/20"
+                  initial={{ x: "-100%" }}
+                  whileHover={{ x: "100%" }}
+                  transition={{ duration: 0.6 }}
+                />
+                <span className="relative z-10 flex items-center">
+                  Find Out More
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </span>
+              </Link>
             </Button>
           </motion.div>
         </motion.div>

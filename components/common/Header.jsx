@@ -22,6 +22,22 @@ function Header() {
       animate={{ y: 0 }}
       className="fixed top-0 w-full z-50 bg-white backdrop-blur-md border-b border-orange-500/20"
     >
+      <div className="border-b border-gray-300">
+        <div className="container flex-wrap mx-auto px-4 flex justify-between gap-3 py-2 ">
+          <Link
+            href="mailto:Info@nexcooutsourcing.com"
+            className="text-gray-600 font-semibold"
+          >
+            Info@nexcooutsourcing.com
+          </Link>
+          <Link
+            href="tel:+447961606003"
+            className="text-gray-600 font-semibold"
+          >
+            +44 7961 606003
+          </Link>
+        </div>
+      </div>
       <div className="container mx-auto px-4 py-1.5">
         <div className="flex items-center justify-between">
           <SiteLogo />

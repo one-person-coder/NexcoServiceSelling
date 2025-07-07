@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 function Hero() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -179,25 +180,28 @@ function Hero() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-12 py-6 text-lg shadow-2xl relative overflow-hidden group"
+                  asChild
                 >
-                  <motion.div
-                    className="absolute inset-0 bg-white/20"
-                    initial={{ x: "-100%" }}
-                    whileHover={{ x: "100%" }}
-                    transition={{ duration: 0.6 }}
-                  />
-                  <span className="relative z-10 flex items-center">
-                    Our Team
+                  <Link href="/our-team">
                     <motion.div
-                      animate={{ x: [0, 5, 0] }}
-                      transition={{
-                        duration: 1.5,
-                        repeat: Number.POSITIVE_INFINITY,
-                      }}
-                    >
-                      <ArrowRight className="ml-2 w-5 h-5" />
-                    </motion.div>
-                  </span>
+                      className="absolute inset-0 bg-white/20"
+                      initial={{ x: "-100%" }}
+                      whileHover={{ x: "100%" }}
+                      transition={{ duration: 0.6 }}
+                    />
+                    <span className="relative z-10 flex items-center">
+                      Our Team
+                      <motion.div
+                        animate={{ x: [0, 5, 0] }}
+                        transition={{
+                          duration: 1.5,
+                          repeat: Number.POSITIVE_INFINITY,
+                        }}
+                      >
+                        <ArrowRight className="ml-2 w-5 h-5" />
+                      </motion.div>
+                    </span>
+                  </Link>
                 </Button>
               </motion.div>
             </motion.div>
